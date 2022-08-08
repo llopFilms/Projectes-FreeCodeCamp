@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,200&display=swap');
+
+html {
+  font-size: 62.5%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100%;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.8rem;
+  background: linear-gradient(120deg,
+      rgba(58, 58, 158, 0.8),
+      rgba(136, 136, 206, 0.7)),
+    url("https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.container {
+  margin: auto;
+  width: 100%;
+  color: rgb(225, 225, 225);
+}
+
+@media (min-width: 576px) {
+
+  .container {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+
+  .container {
+    max-width: 720px;
+  }
+}
+
+.header {
+  padding: 5rem 0 3rem 0;
+  text-align: center;
+}
+
+.header h1 {
+  font-weight: 200;
+  font-size: 3.2rem;
+  line-height: 1.2;
+}
+
+.header p {
+  font-size: 1.8rem;
+  font-style: italic;
+  padding-top: .6rem;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
+}
+
+.survey-form {
+  margin: auto;
+  padding: 4rem;
+  background-color: rgba(27, 27, 50, 0.8);
+  border-radius: .4rem;
+}
+
+.form-group {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  padding-bottom: 3rem;
+  gap: .6rem;
+}
+
+.form-group:nth-child(8) {
+  padding-top: 1rem;
+}
+
+input,
+select {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.6rem;
+  color: rgba(0, 0, 0, 0.7);
+  padding: .6rem 1.3rem;
+  border: none;
+  border-radius: .4rem;
+}
+
+[type=text]:focus,
+[type=email]:focus,
+[type=number]:focus,
+select:focus {
+  outline: .35rem solid rgba(0, 123, 255, 0.5);
+  transition: outline .25s ease-in-out;
+}
+
+span {
+  font-size: small;
+  margin-left: .5rem;
+}
+
+label {
+  display: flex;
+  align-items: center;
+}
+
+[type=radio],
+[type=checkbox] {
+  margin-right: 1rem;
+  width: 2.1rem;
+  height: 2.1rem;
+}
+
+textarea {
+  min-height: 12rem;
+  resize: vertical;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.6rem;
+  color: rgba(0, 0, 0, 0.9);
+  padding: 1rem 1.3rem;
+  border: .3rem solid transparent;
+  border-radius: .3rem;
+}
+
+textarea:focus {
+  outline: .3rem solid rgba(141, 69, 10, 0.5);
+  border: .25rem solid rgb(255, 102, 0);
+  transition: outline .25s ease-in-out, border .5s ease-in-out;
+}
+
+[type=submit] {
+  padding: 1rem 0;
+  color: inherit;
+  background: #37af65;
+  border-radius: .2rem;
+  cursor: pointer;
+}
