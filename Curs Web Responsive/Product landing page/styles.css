@@ -1,0 +1,303 @@
+@import 'https://fonts.googleapis.com/css?family=Lato:400,700';
+
+html {
+	font-size: 62.5%;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #eee;
+}
+
+.container {
+	margin: 0 auto;
+	position: relative;
+	font-family: 'Lato', sans-serif;
+	font-size: 1.6rem;
+}
+
+.bar-fixed {	
+	position: fixed;
+	top: 0;
+	background-color: #eee;
+	width: 100%;
+	height: 7.5rem;
+	padding: 0 2rem;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	z-index: 1;
+}
+
+.logo {
+	flex: 3;
+}
+
+img {
+	width: 100%;
+	height: auto;
+	max-width: 30rem;
+	margin-left: 2rem;
+}
+
+#nav-bar {
+	flex: 2;
+}
+
+nav ul {
+	display: flex;
+	justify-content: space-around;
+	margin: 0 2rem;
+}
+
+ul li {
+	display: inline-block;
+}
+
+.nav-link, a{
+	text-decoration: none;
+	color: black;
+}
+
+.title-form {
+	margin: 8rem 0 5rem;
+}
+
+h1 {
+	font-size: 2.4rem;
+	text-align: center;
+}
+
+input {
+	display: block;
+	margin: 1.5rem auto;
+	padding: .5rem 2rem;
+}
+
+form input:nth-child(1) {
+	padding: .5rem;
+	width: 28rem;
+}
+
+form input:nth-child(2) {
+	padding: .5rem 2rem;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 1.6rem;
+	border: none;
+	background-color: #f1c40f;
+	cursor: pointer;
+}
+
+[type=submit]:hover {
+	background-color: orange;
+	transition: background-color 1s;
+}
+
+#main, footer{
+	margin: auto;
+	max-width: 1000px;
+	width: 100%;
+	
+}
+
+#features {
+	display: grid;
+	grid: 
+			"icon-feature1 feature1" 12.5rem
+			"icon-feature2 feature2" 12.5rem
+			"icon-feature3 feature3" 12.5rem / 20rem 1fr;
+	margin: 8rem auto 5rem;
+	align-items: center;
+}
+
+i {
+	color: darkorange;
+	margin: auto;
+}
+
+#features i:nth-of-type(1) {
+	grid-area: icon-feature1;
+}
+
+#features div:nth-of-type(1) {
+	grid-area: feature1;
+}
+
+#features i:nth-of-type(2) {
+	grid-area: icon-feature2;
+}
+
+#features div:nth-of-type(2) {
+	grid-area: feature2;
+}
+
+#features i:nth-of-type(3) {
+	grid-area: icon-feature3;
+	transform: scaleX(1.2);
+}
+
+#features div:nth-of-type(3) {
+	grid-area: feature3;
+}
+
+@media (max-width: 550px) {
+
+	#features {
+		display: grid;
+		grid:
+			"feature1" 12.5rem
+			"feature2" 12.5rem
+			"feature3" 12.5rem / 1fr;
+		margin: 4rem auto 6rem;
+		align-items: center;
+		row-gap: 3rem;
+	}
+
+	#features i:nth-of-type(1),
+	#features i:nth-of-type(2),
+	#features i:nth-of-type(3) {
+		display: none;
+	}
+
+	#features div:nth-of-type(1) {
+		grid-area: feature1;
+	}
+
+	#features div:nth-of-type(2) {
+		grid-area: feature2;
+	}
+
+	#features div:nth-of-type(3) {
+		grid-area: feature3;
+	}
+
+	#features div:nth-of-type(1),
+	#features div:nth-of-type(2),
+	#features div:nth-of-type(3) {
+		margin: 0 1rem;
+		text-align: center;
+	}
+}
+
+#how-it-works {
+	display: flex;
+	justify-content: center;
+}
+
+.mida {
+	width: 56rem;
+}
+
+.wrapper {	
+	position: relative;
+	padding-top: 56.25%;
+}
+
+iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+#pricing {
+	margin: 7rem 0 4rem;
+	display: grid;
+	grid-template-columns:repeat(auto-fit, 31.5rem);
+	justify-content: center;
+	column-gap: 2rem;
+	row-gap: 1rem;
+}
+
+.card {
+	border: .2rem solid black;
+	text-align: center;
+	line-height: 2;
+}
+
+.titol {
+	background-color: #ddd;
+	text-transform: uppercase;
+	font-weight: bold;
+	padding: .8rem 0;
+}
+
+.card ol {
+	list-style: none;
+	margin: 1rem 0;
+}
+
+.card button {
+	margin: 2rem 0 1rem;
+	padding: 1rem 2rem;
+	text-transform: uppercase;
+	font-size: 1.6rem;
+	border: none;
+	background-color: #f1c40f;
+	cursor: pointer;
+}
+
+.card button:hover {
+	background-color: orange;
+	transition: background-color 1s;
+}
+
+footer {
+	background-color: #ddd;
+	text-align: right;
+	padding: 2rem 2rem 2rem 0
+}
+
+footer ul {
+	list-style: none;
+	padding-bottom: 1rem; 
+}
+
+footer ul li {
+	margin-left: 1rem;
+}
+
+footer span {
+	font-size: small;
+	color: #444;
+}
+
+@media (max-width: 600px) {
+
+	.bar-fixed,
+	nav ul {
+		flex-flow: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.bar-fixed {
+		padding: 8rem 0 6.5rem;
+	}
+
+	nav ul {
+		margin-top: 1rem;
+	}
+
+	nav ul li {
+		margin: .25rem 0;
+	}
+
+	.title-form {
+		margin: 16rem 0 5rem;
+	}
+
+}
+
+
+
+
+
+
