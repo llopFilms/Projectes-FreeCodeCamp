@@ -4,9 +4,9 @@
 	--main-blue: #45567d;
 	--main-gray: #303841;
 	--poppins: 'Poppins',
-	sans-serif;
+		sans-serif;
 	--raleway: 'Raleway',
-	sans-serif;
+		sans-serif;
 }
 
 html {
@@ -56,7 +56,7 @@ a {
 	display: block;
 	text-decoration: none;
 	color: var(--main-white);
-	font-family: var(--poppins);	
+	font-family: var(--poppins);
 }
 
 #navbar {
@@ -66,7 +66,7 @@ a {
 	width: 100%;
 	background-color: var(--main-red);
 	box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
-	z-index: 1;	
+	z-index: 1;
 }
 
 #navbar ul {
@@ -79,7 +79,7 @@ a {
 	padding: 1.9rem;
 }
 
-.nav-link:hover {	
+.nav-link:hover {
 	background-color: var(--main-blue);
 }
 
@@ -99,7 +99,7 @@ h1 {
 	font-size: 6rem;
 }
 
-h1 + p {
+h1+p {
 	font-family: var(--poppins);
 	font-size: 3rem;
 	font-style: italic;
@@ -114,7 +114,7 @@ h1 + p {
 }
 
 #projects h2 {
-	margin: 0 auto 6rem auto;	
+	margin: 0 auto 6rem auto;
 	font-family: var(--raleway);
 	font-size: 4.2rem;
 	max-width: 64rem;
@@ -129,7 +129,7 @@ h1 + p {
 	gap: 4rem;
 }
 
-.projects-link {
+.project-tile {
 	background: var(--main-gray);
 	box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 	border-radius: 2px;
@@ -156,7 +156,7 @@ h1 + p {
 	transition: color 0.3s ease-out;
 }
 
-.projects-link:hover .code {
+.project-tile:hover .code {
 	color: #ff7f50;
 }
 
@@ -173,7 +173,7 @@ h1 + p {
 	margin-left: 1rem;
 }
 
-.projects-link-bottom:hover{
+.projects-link-bottom:hover {
 	background: var(--main-red);
 }
 
@@ -202,7 +202,7 @@ h1 + p {
 	margin-top: 4rem;
 }
 
-#contact a {	
+#contact a {
 	font-size: 2.5rem;
 	text-shadow: 2px 2px 1px #1f1f1f;
 	padding: 1rem 2rem;
@@ -236,8 +236,9 @@ footer a {
 footer i {
 	vertical-align: middle;
 }
+
 @media (max-width: 460px) {
-	
+
 	#contact h2 {
 		font-size: 4rem;
 	}
@@ -247,31 +248,5 @@ footer i {
 		align-items: center;
 	}
 
-	footer p {
-		
-	}	
-};
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+	footer p {}
+}
