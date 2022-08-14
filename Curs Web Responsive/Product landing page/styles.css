@@ -1,5 +1,13 @@
 @import 'https://fonts.googleapis.com/css?family=Lato:400,700';
 
+:root{
+	--backgound-body: #eee;
+	--background-button: #f1c40f;
+	--background-button-hover: orange;
+	--backround-div: #ddd;
+	--color-icon: darkorange;
+}
+
 html {
 	font-size: 62.5%;
 }
@@ -11,7 +19,7 @@ html {
 }
 
 body {
-	background-color: #eee;
+	background-color: var(--backgound-body);
 }
 
 .container {
@@ -24,7 +32,7 @@ body {
 .bar-fixed {	
 	position: fixed;
 	top: 0;
-	background-color: #eee;
+	background-color: var(--backgound-body);
 	width: 100%;
 	height: 7.5rem;
 	padding: 0 2rem;
@@ -90,12 +98,12 @@ form input:nth-child(2) {
 	font-weight: bold;
 	font-size: 1.6rem;
 	border: none;
-	background-color: #f1c40f;
+	background-color: var(--background-button);
 	cursor: pointer;
 }
 
 [type=submit]:hover {
-	background-color: orange;
+	background-color: var(--background-button-hover);
 	transition: background-color 1s;
 }
 
@@ -117,7 +125,7 @@ form input:nth-child(2) {
 }
 
 i {
-	color: darkorange;
+	color: var(--color-icon);
 	margin: auto;
 }
 
@@ -223,7 +231,7 @@ iframe {
 }
 
 .titol {
-	background-color: #ddd;
+	background-color: var(--backround-div);
 	text-transform: uppercase;
 	font-weight: bold;
 	padding: .8rem 0;
@@ -240,17 +248,17 @@ iframe {
 	text-transform: uppercase;
 	font-size: 1.6rem;
 	border: none;
-	background-color: #f1c40f;
+	background-color: var(--background-button);
 	cursor: pointer;
 }
 
 .card button:hover {
-	background-color: orange;
+	background-color: var(--background-button-hover);
 	transition: background-color 1s;
 }
 
 footer {
-	background-color: #ddd;
+	background-color: var(--backround-div);
 	text-align: right;
 	padding: 2rem 2rem 2rem 0
 }
