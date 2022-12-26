@@ -1,6 +1,6 @@
 # Projectes Curs Web Responsive FreeCodeCamp
 
-- CSS pur
+- CSS i HTML pur
 - Media Queries
 
 Vista Projectes:
